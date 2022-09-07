@@ -1,0 +1,35 @@
+data:
+  non_fizz_non_buzz:
+    assertStdoutEqual: 1
+    data:
+    - 1
+    execute:
+    - [ python3 fizzbuzz.py $(data) ]
+    
+  fizz:
+    assertStdoutEqual: "fizz"
+    data:
+    - 3
+    execute:
+    - [ python3 fizzbuzz.py $(data) ]
+  
+  buzz:
+    assertStdoutEqual: "buzz"
+    data:
+    - 5
+    execute:
+    - [ python3 fizzbuzz.py $(data) ]
+  
+  fizzbuzz:
+    assertStdoutEqual: "fizzbuzz"
+    data:
+    - 15
+    execute:
+    - [ python3 fizzbuzz.py $(data) ]
+  
+  exception:
+    assertStderr: True
+    data:
+    - A
+    execute:
+    - [ python3 fizzbuzz.py $(data) ]
