@@ -10,5 +10,4 @@ def fizzbuzz(n):
     else:
         return str(n)
 
-if len(sys.argv) == 2:
-    fizzbuzz(sys.argv[1])
+fizzbuzz(sys.argv[1])
