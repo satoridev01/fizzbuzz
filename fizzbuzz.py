@@ -10,4 +10,4 @@ def fizzbuzz(n):
     else:
         return str(n)
 
-fizzbuzz(sys.argv[1])
+print( fizzbuzz( sys.argv[1] ) )
