@@ -7,21 +7,21 @@ tests:
     - [ python3 fizzbuzz.py $(data) ]
     
   fizz:
-    assertStdoutEqual: "fizz"
+    assertStdoutEqual: "Fizz"
     data:
     - 3
     execute:
     - [ python3 fizzbuzz.py $(data) ]
   
   buzz:
-    assertStdoutEqual: "buzz"
+    assertStdoutEqual: "Buzz"
     data:
     - 5
     execute:
     - [ python3 fizzbuzz.py $(data) ]
   
   fizzbuzz:
-    assertStdoutEqual: "fizzbuzz"
+    assertStdoutEqual: "FizzBuzz"
     data:
     - 15
     execute:
