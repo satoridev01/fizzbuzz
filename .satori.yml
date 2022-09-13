@@ -1,4 +1,4 @@
-tests:
+data:
   non_fizz_non_buzz:
     assertStdoutEqual: 1
     data:
